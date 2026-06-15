@@ -11,7 +11,8 @@ function App() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}data/workload.json`)
+    const dataUrl = `${import.meta.env.BASE_URL}data/workload.json?t=${Date.now()}`;
+    fetch(dataUrl, { cache: 'no-store' })
       .then((res) => {
         if (!res.ok) throw new Error('Failed to load workload data');
         return res.json() as Promise<WorkloadDataset>;
@@ -28,11 +29,18 @@ function App() {
     return <div className="loading">Loading Title Core workload data…</div>;
   }
 
-  const lastUpdated = new Date(data.summary.lastUpdated).toLocaleDateString('en-US', {
+  const lastUpdated = new Date(data.summary.lastUpdated).toLocaleString('en-US', {
     month: 'short',
     day: 'numeric',
     year: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit',
   });
+
+  const activeAppNames = data.apps
+    .filter((app) => app.totalReleases > 0)
+    .map((app) => app.project)
+    .join(', ');
 
   return (
     <div className="dashboard">
@@ -44,8 +52,8 @@ function App() {
         </div>
         <h1>Workload Dashboard</h1>
         <p>
-          Title Origination &amp; Intent applications — releases, stories, bugs,
-          and QA resources. Last updated {lastUpdated}.
+          Title Origination &amp; Intent — {data.summary.activeApps} apps with releases
+          ({activeAppNames}). Data refreshed {lastUpdated}.
         </p>
       </header>
 

@@ -38,18 +38,21 @@ function isTitleCoreRecord(record: WorkloadRecord): boolean {
   return record.fleet === TITLE_CORE_FLEET;
 }
 
-function hasReleaseWork(item: { stories: number; bugs: number }): boolean {
-  return item.stories > 0 || item.bugs > 0;
-}
-
 function sanitizeRecord(record: WorkloadRecord): WorkloadRecord {
-  const releaseBreakdown = record.releaseBreakdown.filter(hasReleaseWork);
+  const releaseBreakdown = record.releaseBreakdown;
+  const totalStories = releaseBreakdown.reduce((sum, item) => sum + item.stories, 0);
+  const totalBugs = releaseBreakdown.reduce((sum, item) => sum + item.bugs, 0);
+  const releases =
+    record.releases > 0
+      ? record.releases
+      : releaseBreakdown.length;
+
   return {
     ...record,
     releaseBreakdown,
-    totalStories: releaseBreakdown.reduce((sum, item) => sum + item.stories, 0),
-    totalBugs: releaseBreakdown.reduce((sum, item) => sum + item.bugs, 0),
-    releases: releaseBreakdown.length,
+    totalStories,
+    totalBugs,
+    releases,
   };
 }
 

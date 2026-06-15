@@ -1,7 +1,7 @@
 {
   "source": "Offshore Team Workload Tracker.xlsx",
   "sheet": "Title Core",
-  "lastUpdated": "2026-06-15T23:51:55.358836",
+  "lastUpdated": "2026-06-16T00:06:21.141080",
   "records": [
     {
       "month": "2026-01",
@@ -100,6 +100,31 @@
         }
       ],
       "totalStories": 4,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-01",
+      "primaryResource": "Anusha Torgalmath",
+      "fleet": "Title Origination & Intent",
+      "project": "CPM",
+      "releases": 1,
+      "releaseVersion": "236",
+      "testPlanLink": "https://jira.disney.com/browse/CPM-7985",
+      "backupResource": "Ambika/Nandeesha(Trained)",
+      "primaryResources": [
+        "Anusha Torgalmath"
+      ],
+      "backupResources": [
+        "Ambika",
+        "Nandeesha"
+      ],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
       "totalBugs": 0
     },
     {
@@ -220,6 +245,28 @@
       "totalBugs": 1
     },
     {
+      "month": "2026-02",
+      "primaryResource": "Raghavendra",
+      "fleet": "Title Origination & Intent",
+      "project": "Belle",
+      "releases": 1,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": null,
+      "primaryResources": [
+        "Raghavendra"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
       "month": "2026-03",
       "primaryResource": "Raghavendra",
       "fleet": "Title Origination & Intent",
@@ -272,7 +319,7 @@
       "primaryResource": "Raghavendra Velpula",
       "fleet": "Title Origination & Intent",
       "project": "Belle",
-      "releases": 2,
+      "releases": 1,
       "releaseVersion": " Release 20260519\nRelease 20260528\n",
       "testPlanLink": "https://jira.disney.com/browse/GPLBELLE-4250\n\nhttps://jira.disney.com/browse/GPLBELLE-4102",
       "backupResource": null,
@@ -284,14 +331,10 @@
         {
           "stories": 0,
           "bugs": 4
-        },
-        {
-          "stories": 2,
-          "bugs": 1
         }
       ],
-      "totalStories": 2,
-      "totalBugs": 5
+      "totalStories": 0,
+      "totalBugs": 4
     },
     {
       "month": "2026-01",
@@ -449,6 +492,667 @@
       ],
       "totalStories": 0,
       "totalBugs": 1
+    },
+    {
+      "month": "2026-02",
+      "primaryResource": "Gajanan/Jeevan S",
+      "fleet": "Title Origination & Intent",
+      "project": "WON",
+      "releases": 1,
+      "releaseVersion": "0.36",
+      "testPlanLink": "https://jira.disney.com/browse/WON-1374",
+      "backupResource": null,
+      "primaryResources": [
+        "Gajanan",
+        "Jeevan S"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 1,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 1,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-05",
+      "primaryResource": "Jeevan S/Gajanan",
+      "fleet": "Title Origination & Intent",
+      "project": "WON",
+      "releases": 2,
+      "releaseVersion": "0.37 (both test plans attached to the same version)",
+      "testPlanLink": "https://jira.disney.com/browse/WON-1424\nhttps://jira.disney.com/browse/WON-1493",
+      "backupResource": null,
+      "primaryResources": [
+        "Jeevan S",
+        "Gajanan"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 9,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 9,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-03",
+      "primaryResource": "Madan Yaragatti",
+      "fleet": "Theatrical Supply Chain",
+      "project": "DCS",
+      "releases": 2,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": null,
+      "primaryResources": [
+        "Madan Yaragatti"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-04",
+      "primaryResource": "Madan Yaragatti",
+      "fleet": "Theatrical Supply Chain",
+      "project": "DCS",
+      "releases": 2,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": null,
+      "primaryResources": [
+        "Madan Yaragatti"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-05",
+      "primaryResource": "Madan Yaragatti",
+      "fleet": "Theatrical Supply Chain",
+      "project": "DCS",
+      "releases": 1,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": null,
+      "primaryResources": [
+        "Madan Yaragatti"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-01",
+      "primaryResource": "Madan Yaragatti",
+      "fleet": "Theatrical Supply Chain",
+      "project": "ITDS",
+      "releases": 2,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": "Manoj/Madan/Nandeesha(Trained)",
+      "primaryResources": [
+        "Madan Yaragatti"
+      ],
+      "backupResources": [
+        "Manoj",
+        "Madan",
+        "Nandeesha"
+      ],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-02",
+      "primaryResource": "Madan Yaragatti",
+      "fleet": "Theatrical Supply Chain",
+      "project": "ITDS",
+      "releases": 4,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": null,
+      "primaryResources": [
+        "Madan Yaragatti"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-03",
+      "primaryResource": "Madan Yaragatti",
+      "fleet": "Theatrical Supply Chain",
+      "project": "ITDS",
+      "releases": 5,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": null,
+      "primaryResources": [
+        "Madan Yaragatti"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-04",
+      "primaryResource": "Madan Yaragatti",
+      "fleet": "Theatrical Supply Chain",
+      "project": "ITDS",
+      "releases": 2,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": null,
+      "primaryResources": [
+        "Madan Yaragatti"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-05",
+      "primaryResource": "Madan Yaragatti/Manoj Kumar",
+      "fleet": "Theatrical Supply Chain",
+      "project": "ITDS",
+      "releases": 3,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": null,
+      "primaryResources": [
+        "Madan Yaragatti",
+        "Manoj Kumar"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-01",
+      "primaryResource": "Yallaling Vaijinath/Athira",
+      "fleet": "Theatrical Supply Chain",
+      "project": "TVM",
+      "releases": 1,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": "Yallaling/Manoj/Madan",
+      "primaryResources": [
+        "Yallaling Vaijinath",
+        "Athira"
+      ],
+      "backupResources": [
+        "Yallaling",
+        "Manoj",
+        "Madan"
+      ],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-02",
+      "primaryResource": "Yallaling Vaijinath/Athira",
+      "fleet": "Theatrical Supply Chain",
+      "project": "TVM",
+      "releases": 1,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": null,
+      "primaryResources": [
+        "Yallaling Vaijinath",
+        "Athira"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-03",
+      "primaryResource": "Yallaling Vaijinath/Athira",
+      "fleet": "Theatrical Supply Chain",
+      "project": "TVM",
+      "releases": 2,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": null,
+      "primaryResources": [
+        "Yallaling Vaijinath",
+        "Athira"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-04",
+      "primaryResource": "Yallaling Vaijinath/Athira",
+      "fleet": "Theatrical Supply Chain",
+      "project": "TVM",
+      "releases": 1,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": null,
+      "primaryResources": [
+        "Yallaling Vaijinath",
+        "Athira"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-05",
+      "primaryResource": "Manoj Kumar/Yallaling Vaijinath",
+      "fleet": "Theatrical Supply Chain",
+      "project": "TVM",
+      "releases": 1,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": null,
+      "primaryResources": [
+        "Manoj Kumar",
+        "Yallaling Vaijinath"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-02",
+      "primaryResource": "Gajanan",
+      "fleet": "Theatrical Supply Chain",
+      "project": "GRC",
+      "releases": 1,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": null,
+      "primaryResources": [
+        "Gajanan"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-03",
+      "primaryResource": "Gajanan",
+      "fleet": "Theatrical Supply Chain",
+      "project": "GRC",
+      "releases": 1,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": null,
+      "primaryResources": [
+        "Gajanan"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-02",
+      "primaryResource": "Arjun/Hariharan",
+      "fleet": "Theatrical Supply Chain",
+      "project": "Russell",
+      "releases": 2,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": null,
+      "primaryResources": [
+        "Arjun",
+        "Hariharan"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-03",
+      "primaryResource": "Arjun/Hariharan",
+      "fleet": "Theatrical Supply Chain",
+      "project": "Russell",
+      "releases": 2,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": null,
+      "primaryResources": [
+        "Arjun",
+        "Hariharan"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-04",
+      "primaryResource": "Arjun/Hariharan",
+      "fleet": "Theatrical Supply Chain",
+      "project": "Russell",
+      "releases": 4,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": null,
+      "primaryResources": [
+        "Arjun",
+        "Hariharan"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-05",
+      "primaryResource": "Arjun/Hariharan",
+      "fleet": "Theatrical Supply Chain",
+      "project": "Russell",
+      "releases": 3,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": null,
+      "primaryResources": [
+        "Arjun",
+        "Hariharan"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-01",
+      "primaryResource": "Nikitha M/Gajanan",
+      "fleet": "Theatrical Supply Chain",
+      "project": "Sparta",
+      "releases": 1,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": "Jeevan(Trained)",
+      "primaryResources": [
+        "Nikitha M",
+        "Gajanan"
+      ],
+      "backupResources": [
+        "Jeevan"
+      ],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-02",
+      "primaryResource": "Gajanan",
+      "fleet": "Theatrical Supply Chain",
+      "project": "Sparta",
+      "releases": 1,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": null,
+      "primaryResources": [
+        "Gajanan"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-03",
+      "primaryResource": "Gajanan",
+      "fleet": "Theatrical Supply Chain",
+      "project": "Sparta",
+      "releases": 1,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": null,
+      "primaryResources": [
+        "Gajanan"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-04",
+      "primaryResource": "Gajanan",
+      "fleet": "Theatrical Supply Chain",
+      "project": "Sparta",
+      "releases": 1,
+      "releaseVersion": null,
+      "testPlanLink": null,
+      "backupResource": null,
+      "primaryResources": [
+        "Gajanan"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 0
     }
   ]
 }

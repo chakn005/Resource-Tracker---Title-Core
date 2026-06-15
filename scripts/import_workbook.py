@@ -2,7 +2,6 @@
 """Import Title Core sheet from Offshore Team Workload Tracker.xlsx into workload.json."""
 
 import json
-import os
 import re
 from datetime import datetime
 from pathlib import Path
@@ -13,23 +12,89 @@ WORKBOOK = Path.home() / "Desktop" / "Offshore Team Workload Tracker.xlsx"
 OUTPUT = Path(__file__).resolve().parent.parent / "public" / "data" / "workload.json"
 
 
-def parse_details(details) -> list[dict]:
-    if not details:
-        return []
-    releases = []
-    blocks = re.split(r"Release\d+:", str(details))
-    for block in blocks[1:]:
-        stories = bugs = 0
-        sm = re.search(r"No of stories:\s*(\d+)", block)
-        bm = re.search(r"Bugs worked:\s*(\d+)", block)
-        if sm:
-            stories = int(sm.group(1))
-        if bm:
-            bugs = int(bm.group(1))
-        if stories == 0 and bugs == 0:
-            continue
-        releases.append({"stories": stories, "bugs": bugs})
-    return releases
+def parse_int(value) -> int:
+    if value is None:
+        return 0
+    try:
+        return int(float(str(value).strip()))
+    except (TypeError, ValueError):
+        return 0
+
+
+def stories_from_text(text: str) -> int:
+    patterns = [
+        r"No of stories\s*(?:\([^)]*\))?\s*:\s*(\d+)",
+        r"total\s*=\s*(\d+)",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, text, re.IGNORECASE)
+        if match:
+            return int(match.group(1))
+    return 0
+
+
+def bugs_from_text(text: str) -> int:
+    match = re.search(r"Bugs worked\s*:\s*(\d+)", text, re.IGNORECASE)
+    return int(match.group(1)) if match else 0
+
+
+def release_count_from_text(text: str) -> int:
+    match = re.search(r"Release\s*:\s*(\d+)", text, re.IGNORECASE)
+    return int(match.group(1)) if match else 0
+
+
+def parse_details(details, releases_column: int) -> tuple[list[dict], int]:
+    text = str(details).strip() if details else ""
+    releases: list[dict] = []
+
+    if text:
+        blocks = re.split(r"Release\d+:", text, flags=re.IGNORECASE)
+        if len(blocks) > 1:
+            for block in blocks[1:]:
+                releases.append(
+                    {
+                        "stories": stories_from_text(block),
+                        "bugs": bugs_from_text(block),
+                    }
+                )
+
+        if not releases:
+            stories = stories_from_text(text)
+            bugs = bugs_from_text(text)
+            if stories > 0 or bugs > 0:
+                releases = [{"stories": stories, "bugs": bugs}]
+
+    final_count = releases_column
+    if final_count <= 0:
+        final_count = release_count_from_text(text)
+
+    if final_count <= 0:
+        releases = [r for r in releases if r["stories"] > 0 or r["bugs"] > 0]
+        return releases, len(releases)
+
+    if not releases:
+        per_release_match = re.search(
+            r"(\d+)\s*tasks?\s*in each release", text, re.IGNORECASE
+        )
+        if per_release_match:
+            each = int(per_release_match.group(1))
+            releases = [{"stories": each, "bugs": 0} for _ in range(final_count)]
+        else:
+            stories = stories_from_text(text)
+            bugs = bugs_from_text(text)
+            releases = [
+                {
+                    "stories": stories // final_count if stories and final_count else 0,
+                    "bugs": bugs if i == 0 else 0,
+                }
+                for i in range(final_count)
+            ]
+
+    while len(releases) < final_count:
+        releases.append({"stories": 0, "bugs": 0})
+    releases = releases[:final_count]
+
+    return releases, final_count
 
 
 def norm_month(value) -> str | None:
@@ -45,6 +110,7 @@ def norm_month(value) -> str | None:
         "apr": "2026-04",
         "may": "2026-05",
         "jun": "2026-06",
+        "dec": "2026-12",
     }
     low = s.lower()[:3]
     return months.get(low, s)
@@ -74,17 +140,21 @@ def main() -> None:
         project = ws.cell(row, 4).value
         if not project:
             continue
+
+        releases_column = parse_int(ws.cell(row, 5).value)
         details = ws.cell(row, 6).value
-        parsed = parse_details(details)
-        if not parsed:
+        parsed, release_count = parse_details(details, releases_column)
+
+        if release_count <= 0:
             continue
+
         records.append(
             {
                 "month": norm_month(ws.cell(row, 1).value),
                 "primaryResource": ws.cell(row, 2).value,
                 "fleet": ws.cell(row, 3).value,
                 "project": str(project).strip(),
-                "releases": len(parsed),
+                "releases": release_count,
                 "releaseVersion": str(ws.cell(row, 7).value)
                 if ws.cell(row, 7).value
                 else None,

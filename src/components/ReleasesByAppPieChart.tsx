@@ -1,6 +1,7 @@
 import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts';
 import type { AppSummary } from '../types/workload';
 import { APP_COLORS } from '../lib/chartColors';
+import { CHART_THEME } from '../lib/chartTheme';
 
 interface Props {
   apps: AppSummary[];
@@ -44,9 +45,10 @@ export function ReleasesByAppPieChart({ apps }: Props) {
             </Pie>
             <Tooltip
               contentStyle={{
-                background: '#1a2332',
-                border: '1px solid #2d3a4f',
+                background: CHART_THEME.tooltipBg,
+                border: `1px solid ${CHART_THEME.tooltipBorder}`,
                 borderRadius: 8,
+                color: '#f5f7fc',
               }}
             />
           </PieChart>

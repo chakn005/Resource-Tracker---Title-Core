@@ -1,17 +1,25 @@
 :root {
-  --bg: #0f1419;
-  --surface: #1a2332;
-  --surface-2: #243044;
-  --border: #2d3a4f;
-  --text: #e8edf4;
-  --text-muted: #8b9cb3;
-  --accent: #4f8cff;
-  --accent-soft: rgba(79, 140, 255, 0.15);
-  --success: #34d399;
-  --warning: #fbbf24;
-  --danger: #f87171;
+  --disney-blue: #0063e5;
+  --disney-blue-dark: #004ecc;
+  --disney-blue-light: #47a3ff;
+  --disney-navy: #0c0f1a;
+  --disney-navy-mid: #13182b;
+  --disney-gold: #ffb63f;
+  --bg: var(--disney-navy);
+  --surface: #171c2e;
+  --surface-2: #1f2740;
+  --border: #2a3350;
+  --text: #f5f7fc;
+  --text-muted: #9aa8c7;
+  --accent: var(--disney-blue);
+  --accent-soft: rgba(0, 99, 229, 0.18);
+  --gold-soft: rgba(255, 182, 63, 0.12);
+  --success: #00d68f;
+  --warning: var(--disney-gold);
+  --danger: #ff5757;
   --radius: 12px;
   --font: 'DM Sans', system-ui, sans-serif;
+  --brand-gradient: linear-gradient(135deg, #0063e5 0%, #004ecc 55%, #113080 100%);
 }
 
 * {
@@ -21,7 +29,10 @@
 body {
   margin: 0;
   font-family: var(--font);
-  background: var(--bg);
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 99, 229, 0.22), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(255, 182, 63, 0.06), transparent),
+    var(--bg);
   color: var(--text);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -36,29 +47,64 @@ h1, h2, h3, p {
 }
 
 a {
-  color: var(--accent);
+  color: var(--disney-blue-light);
 }
 
 .dashboard {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem 1.5rem 4rem;
+  padding: 0 1.5rem 4rem;
 }
 
-.dashboard-header {
-  margin-bottom: 2rem;
+.disney-header {
+  margin: 0 -1.5rem 2rem;
+  padding: 1.5rem 1.5rem 1.75rem;
+  background: var(--brand-gradient);
+  border-bottom: 3px solid var(--disney-gold);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+.brand-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.brand-mark {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.brand-divider {
+  width: 1px;
+  height: 1.1rem;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.brand-product {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.92);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .dashboard-header h1 {
-  font-size: 1.75rem;
+  font-size: 1.85rem;
   font-weight: 700;
   letter-spacing: -0.02em;
+  color: #fff;
 }
 
 .dashboard-header p {
-  color: var(--text-muted);
-  margin-top: 0.35rem;
+  color: rgba(255, 255, 255, 0.82);
+  margin-top: 0.4rem;
   font-size: 0.95rem;
+  max-width: 720px;
 }
 
 .section {
@@ -72,6 +118,7 @@ a {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  color: var(--text);
 }
 
 .section-title span {
@@ -91,6 +138,11 @@ a {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.1rem 1.25rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kpi-card:hover {
+  border-color: rgba(0, 99, 229, 0.45);
 }
 
 .kpi-card .label {
@@ -105,6 +157,7 @@ a {
   font-size: 1.75rem;
   font-weight: 700;
   letter-spacing: -0.02em;
+  color: #fff;
 }
 
 .kpi-card .sub {
@@ -114,8 +167,13 @@ a {
 }
 
 .kpi-card.highlight {
-  border-color: var(--accent);
-  background: linear-gradient(135deg, var(--surface) 0%, var(--accent-soft) 100%);
+  border-color: var(--disney-blue);
+  background: linear-gradient(145deg, var(--surface) 0%, var(--accent-soft) 100%);
+  box-shadow: 0 0 0 1px rgba(0, 99, 229, 0.25), 0 8px 24px rgba(0, 99, 229, 0.12);
+}
+
+.kpi-card.highlight .value {
+  color: var(--disney-blue-light);
 }
 
 .grid-2 {
@@ -135,6 +193,7 @@ a {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.25rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .chart-wrap {
@@ -189,11 +248,12 @@ tr:hover td {
 }
 
 .resource-chip {
-  background: var(--surface-2);
-  border: 1px solid var(--border);
+  background: rgba(0, 99, 229, 0.12);
+  border: 1px solid rgba(0, 99, 229, 0.35);
   border-radius: 6px;
   padding: 0.2rem 0.5rem;
   font-size: 0.78rem;
+  color: var(--disney-blue-light);
 }
 
 .loading, .error {
@@ -269,10 +329,11 @@ tr:hover td {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+  background: var(--surface-2);
 }
 
 .monthly-matrix tbody tr:hover td {
-  background: var(--surface-2);
+  background: rgba(0, 99, 229, 0.08);
 }
 
 .monthly-matrix td.no-value {
@@ -281,16 +342,18 @@ tr:hover td {
 
 .monthly-matrix td.has-value {
   font-weight: 600;
+  color: #fff;
 }
 
 .monthly-matrix td.total-cell {
   font-weight: 700;
-  color: var(--accent);
+  color: var(--disney-blue-light);
 }
 
 .monthly-matrix tfoot td {
-  border-top: 2px solid var(--border);
+  border-top: 2px solid var(--disney-blue);
   font-weight: 600;
+  background: rgba(0, 99, 229, 0.08);
 }
 
 .matrix-app-dot {
@@ -300,4 +363,13 @@ tr:hover td {
   border-radius: 50%;
   margin-right: 0.5rem;
   vertical-align: middle;
+}
+
+.dashboard-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--text-muted);
 }

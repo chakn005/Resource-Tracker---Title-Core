@@ -10,6 +10,7 @@ import {
 } from 'recharts';
 import type { MonthlyTrendData } from '../types/workload';
 import { appColor } from '../lib/chartColors';
+import { CHART_THEME } from '../lib/chartTheme';
 
 interface Props {
   trend: MonthlyTrendData;
@@ -44,25 +45,26 @@ export function MonthlyTrendChart({ trend }: Props) {
       <div className="chart-wrap">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={chartData} margin={{ left: 4, right: 24, top: 8, bottom: 4 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#2d3a4f" vertical={false} />
-            <XAxis dataKey="label" stroke="#8b9cb3" fontSize={12} />
+            <CartesianGrid strokeDasharray="3 3" stroke={CHART_THEME.grid} vertical={false} />
+            <XAxis dataKey="label" stroke={CHART_THEME.axis} fontSize={12} />
             <YAxis
               allowDecimals={false}
-              stroke="#8b9cb3"
+              stroke={CHART_THEME.axis}
               fontSize={12}
               label={{
                 value: 'Releases',
                 angle: -90,
                 position: 'insideLeft',
-                fill: '#8b9cb3',
+                fill: CHART_THEME.axis,
                 fontSize: 11,
               }}
             />
             <Tooltip
               contentStyle={{
-                background: '#1a2332',
-                border: '1px solid #2d3a4f',
+                background: CHART_THEME.tooltipBg,
+                border: `1px solid ${CHART_THEME.tooltipBorder}`,
                 borderRadius: 8,
+                color: '#f5f7fc',
               }}
               formatter={(value: number, name: string) => [`${value} release${value === 1 ? '' : 's'}`, name]}
             />

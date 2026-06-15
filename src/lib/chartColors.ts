@@ -1,12 +1,12 @@
 export const APP_COLORS = [
-  '#4f8cff',
-  '#34d399',
-  '#f87171',
-  '#fbbf24',
-  '#a78bfa',
-  '#22d3ee',
-  '#fb923c',
-  '#e879f9',
+  '#0063e5',
+  '#00b8ff',
+  '#ffb63f',
+  '#7b61ff',
+  '#00d68f',
+  '#ff6b9d',
+  '#ff5757',
+  '#47d5ff',
 ];
 
 export function appColor(index: number): string {

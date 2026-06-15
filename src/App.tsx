@@ -36,10 +36,15 @@ function App() {
 
   return (
     <div className="dashboard">
-      <header className="dashboard-header">
-        <h1>Title Core QA Workload Dashboard</h1>
+      <header className="dashboard-header disney-header">
+        <div className="brand-bar">
+          <span className="brand-mark">Disney</span>
+          <span className="brand-divider" aria-hidden="true" />
+          <span className="brand-product">Title Core QA</span>
+        </div>
+        <h1>Workload Dashboard</h1>
         <p>
-          Title Origination &amp; Intent applications only — releases, stories, bugs,
+          Title Origination &amp; Intent applications — releases, stories, bugs,
           and QA resources. Last updated {lastUpdated}.
         </p>
       </header>
@@ -55,6 +60,10 @@ function App() {
       </section>
 
       <ResourceMatrix apps={data.apps} />
+
+      <footer className="dashboard-footer">
+        Disney · Title Origination &amp; Intent · QA Workload Tracker
+      </footer>
     </div>
   );
 }

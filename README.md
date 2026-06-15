@@ -20,11 +20,20 @@ Open http://localhost:5173
 
 ## Live site
 
-After pushing to `main`, GitHub Actions deploys to:
-
 **https://chakn005.github.io/Resource-Tracker---Title-Core/**
 
 Repository: [Resource-Tracker---Title-Core](https://github.com/chakn005/Resource-Tracker---Title-Core)
+
+### One-time GitHub Pages setup
+
+After the first push, enable Pages in the repo:
+
+1. Open [Settings → Pages](https://github.com/chakn005/Resource-Tracker---Title-Core/settings/pages)
+2. Under **Build and deployment**, set **Source** to **Deploy from a branch**
+3. Set **Branch** to `gh-pages` / `/ (root)`
+4. Save — the site will be live in 1–2 minutes
+
+Pushes to `main` automatically rebuild and redeploy via GitHub Actions.
 
 ## Refresh data from Excel
 

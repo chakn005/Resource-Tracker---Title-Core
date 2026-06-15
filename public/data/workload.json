@@ -1,0 +1,454 @@
+{
+  "source": "Offshore Team Workload Tracker.xlsx",
+  "sheet": "Title Core",
+  "lastUpdated": "2026-06-15T23:51:55.358836",
+  "records": [
+    {
+      "month": "2026-01",
+      "primaryResource": "Anusha Torgalmath",
+      "fleet": "Title Origination & Intent",
+      "project": "TRM",
+      "releases": 2,
+      "releaseVersion": "v1.36\nv1.37",
+      "testPlanLink": "https://jira.disney.com/browse/TMU-2874\n\nhttps://jira.disney.com/browse/TMU-2895",
+      "backupResource": "Sanath Kumar/Manjunath",
+      "primaryResources": [
+        "Anusha Torgalmath"
+      ],
+      "backupResources": [
+        "Sanath Kumar",
+        "Manjunath"
+      ],
+      "releaseBreakdown": [
+        {
+          "stories": 1,
+          "bugs": 2
+        },
+        {
+          "stories": 1,
+          "bugs": 4
+        }
+      ],
+      "totalStories": 2,
+      "totalBugs": 6
+    },
+    {
+      "month": "2026-02",
+      "primaryResource": "Anusha Torgalmath",
+      "fleet": "Title Origination & Intent",
+      "project": "TRM",
+      "releases": 1,
+      "releaseVersion": "v1.38",
+      "testPlanLink": "https://jira.disney.com/browse/TMU-2908",
+      "backupResource": null,
+      "primaryResources": [
+        "Anusha Torgalmath"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 2,
+          "bugs": 3
+        }
+      ],
+      "totalStories": 2,
+      "totalBugs": 3
+    },
+    {
+      "month": "2026-03",
+      "primaryResource": "Anusha Torgalmath",
+      "fleet": "Title Origination & Intent",
+      "project": "TRM",
+      "releases": 1,
+      "releaseVersion": "v1.38.1",
+      "testPlanLink": "https://jira.disney.com/browse/TMU-2930",
+      "backupResource": null,
+      "primaryResources": [
+        "Anusha Torgalmath"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 2
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 2
+    },
+    {
+      "month": "2026-05",
+      "primaryResource": "Anusha Torgalmath",
+      "fleet": "Title Origination & Intent",
+      "project": "TRM",
+      "releases": 2,
+      "releaseVersion": "v1.38.2\n\nv1.39",
+      "testPlanLink": "Release 1  : https://jira.disney.com/browse/TMU-2991 \n\nRelease 2 : https://jira.disney.com/browse/TMU-2936 ",
+      "backupResource": null,
+      "primaryResources": [
+        "Anusha Torgalmath"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 2,
+          "bugs": 0
+        },
+        {
+          "stories": 2,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 4,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-02",
+      "primaryResource": "Anusha Torgalmath",
+      "fleet": "Title Origination & Intent",
+      "project": "CPM",
+      "releases": 1,
+      "releaseVersion": "237",
+      "testPlanLink": "https://jira.disney.com/browse/CPM-8028",
+      "backupResource": null,
+      "primaryResources": [
+        "Anusha Torgalmath"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 4,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 4,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-03",
+      "primaryResource": "Anusha Torgalmath",
+      "fleet": "Title Origination & Intent",
+      "project": "CPM",
+      "releases": 1,
+      "releaseVersion": "239",
+      "testPlanLink": "https://jira.disney.com/browse/CPM-8045",
+      "backupResource": null,
+      "primaryResources": [
+        "Anusha Torgalmath"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 5,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 5,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-04",
+      "primaryResource": "Anusha Torgalmath",
+      "fleet": "Title Origination & Intent",
+      "project": "CPM",
+      "releases": 1,
+      "releaseVersion": "240",
+      "testPlanLink": "https://jira.disney.com/browse/CPM-8071",
+      "backupResource": null,
+      "primaryResources": [
+        "Anusha Torgalmath"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 7,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 7,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-05",
+      "primaryResource": "Anusha Torgalmath",
+      "fleet": "Title Origination & Intent",
+      "project": "CPM",
+      "releases": 1,
+      "releaseVersion": "241",
+      "testPlanLink": "https://jira.disney.com/browse/CPM-8112",
+      "backupResource": null,
+      "primaryResources": [
+        "Anusha Torgalmath"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 6,
+          "bugs": 3
+        }
+      ],
+      "totalStories": 6,
+      "totalBugs": 3
+    },
+    {
+      "month": "2026-01",
+      "primaryResource": "Raghavendra",
+      "fleet": "Title Origination & Intent",
+      "project": "Belle",
+      "releases": 2,
+      "releaseVersion": null,
+      "testPlanLink": "https://jira.disney.com/browse/GPLBELLE-4004\n\nhttps://jira.disney.com/browse/GPLBELLE-4013",
+      "backupResource": "Anusha/Govind",
+      "primaryResources": [
+        "Raghavendra"
+      ],
+      "backupResources": [
+        "Anusha",
+        "Govind"
+      ],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 1
+        },
+        {
+          "stories": 1,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 1,
+      "totalBugs": 1
+    },
+    {
+      "month": "2026-03",
+      "primaryResource": "Raghavendra",
+      "fleet": "Title Origination & Intent",
+      "project": "Belle",
+      "releases": 2,
+      "releaseVersion": "Release 20260310\n\nRelease 20260316\n",
+      "testPlanLink": "https://jira.disney.com/browse/GPLBELLE-4043\n\nhttps://jira.disney.com/browse/GPLBELLE-4067",
+      "backupResource": null,
+      "primaryResources": [
+        "Raghavendra"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 1,
+          "bugs": 0
+        },
+        {
+          "stories": 0,
+          "bugs": 1
+        }
+      ],
+      "totalStories": 1,
+      "totalBugs": 1
+    },
+    {
+      "month": "2026-04",
+      "primaryResource": "Raghavendra",
+      "fleet": "Title Origination & Intent",
+      "project": "Belle",
+      "releases": 1,
+      "releaseVersion": "Release 20260402",
+      "testPlanLink": "https://jira.disney.com/browse/GPLBELLE-4072",
+      "backupResource": null,
+      "primaryResources": [
+        "Raghavendra"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 1,
+          "bugs": 5
+        }
+      ],
+      "totalStories": 1,
+      "totalBugs": 5
+    },
+    {
+      "month": "2026-05",
+      "primaryResource": "Raghavendra Velpula",
+      "fleet": "Title Origination & Intent",
+      "project": "Belle",
+      "releases": 2,
+      "releaseVersion": " Release 20260519\nRelease 20260528\n",
+      "testPlanLink": "https://jira.disney.com/browse/GPLBELLE-4250\n\nhttps://jira.disney.com/browse/GPLBELLE-4102",
+      "backupResource": null,
+      "primaryResources": [
+        "Raghavendra Velpula"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 4
+        },
+        {
+          "stories": 2,
+          "bugs": 1
+        }
+      ],
+      "totalStories": 2,
+      "totalBugs": 5
+    },
+    {
+      "month": "2026-01",
+      "primaryResource": "GovindGandhi/Raghavendra",
+      "fleet": "Title Origination & Intent",
+      "project": "Bolt",
+      "releases": 2,
+      "releaseVersion": "Release 20260114\nRelease 20260122\n",
+      "testPlanLink": "https://jira.disney.com/browse/BOLTM-7052\n\nhttps://jira.disney.com/browse/BOLTM-7077",
+      "backupResource": "Raghavendra,Govind\nAnusha(Backup)",
+      "primaryResources": [
+        "GovindGandhi",
+        "Raghavendra"
+      ],
+      "backupResources": [
+        "Raghavendra",
+        "Govind Anusha"
+      ],
+      "releaseBreakdown": [
+        {
+          "stories": 3,
+          "bugs": 0
+        },
+        {
+          "stories": 3,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 6,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-02",
+      "primaryResource": "GovindGandhi/Raghavendra",
+      "fleet": "Title Origination & Intent",
+      "project": "Bolt",
+      "releases": 2,
+      "releaseVersion": "Release - 20260210\n Release 20260225\n",
+      "testPlanLink": "https://jira.disney.com/browse/BOLTM-7092\n\nhttps://jira.disney.com/browse/BOLTM-7134",
+      "backupResource": null,
+      "primaryResources": [
+        "GovindGandhi",
+        "Raghavendra"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 6,
+          "bugs": 1
+        },
+        {
+          "stories": 5,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 11,
+      "totalBugs": 1
+    },
+    {
+      "month": "2026-03",
+      "primaryResource": "GovindGandhi/Raghavendra",
+      "fleet": "Title Origination & Intent",
+      "project": "Bolt",
+      "releases": 2,
+      "releaseVersion": "Release 20260325\n\nRelease - 20260331\n",
+      "testPlanLink": "https://jira.disney.com/browse/BOLTM-7152\n\nhttps://jira.disney.com/browse/BOLTM-7176",
+      "backupResource": null,
+      "primaryResources": [
+        "GovindGandhi",
+        "Raghavendra"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 1,
+          "bugs": 0
+        },
+        {
+          "stories": 1,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 2,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-04",
+      "primaryResource": "Raghavendra/GovindGandhi",
+      "fleet": "Title Origination & Intent",
+      "project": "Bolt",
+      "releases": 1,
+      "releaseVersion": "Release 20260416\n",
+      "testPlanLink": "https://jira.disney.com/browse/BOLTM-7195",
+      "backupResource": null,
+      "primaryResources": [
+        "Raghavendra",
+        "GovindGandhi"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 2,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 2,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-05",
+      "primaryResource": "Raghavendra Velpula/GovindGandhi",
+      "fleet": "Title Origination & Intent",
+      "project": "Bolt",
+      "releases": 2,
+      "releaseVersion": "Release 20260507\n\nRelease 20260528\n",
+      "testPlanLink": "https://jira.disney.com/browse/BOLTM-7220\n\nhttp://jira.disney.com/browse/BOLTM-7242",
+      "backupResource": null,
+      "primaryResources": [
+        "Raghavendra Velpula",
+        "GovindGandhi"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 1,
+          "bugs": 0
+        },
+        {
+          "stories": 2,
+          "bugs": 0
+        }
+      ],
+      "totalStories": 3,
+      "totalBugs": 0
+    },
+    {
+      "month": "2026-03",
+      "primaryResource": "GovindGandhi/Raghavendra",
+      "fleet": "Title Origination & Intent",
+      "project": "SONAR/MARS",
+      "releases": 1,
+      "releaseVersion": "4.61",
+      "testPlanLink": "https://jira.disney.com/browse/SMART-9462",
+      "backupResource": null,
+      "primaryResources": [
+        "GovindGandhi",
+        "Raghavendra"
+      ],
+      "backupResources": [],
+      "releaseBreakdown": [
+        {
+          "stories": 0,
+          "bugs": 1
+        }
+      ],
+      "totalStories": 0,
+      "totalBugs": 1
+    }
+  ]
+}
